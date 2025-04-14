@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevate School - Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target="#mainNav" data-offset="70">
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="logo.png" alt="Elevate School Logo" id="school-logo" class="neon-logo" style="height: 60px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Menu
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="index.html">Home</a>
+                                <a class="dropdown-item" href="about.html">About Us</a>
+                                <a class="dropdown-item" href="courses.html">Courses</a>
+                                <a class="dropdown-item" href="testimonials.html">Testimonials</a>
+                                <a class="dropdown-item" href="contact.html">Contact</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section (BS4 Carousel) -->
+    <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#heroCarousel" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="edu1.jpeg" class="d-block w-100" alt="School Image 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Welcome to Elevate School</h1>
+                    <p>Empowering the Leaders of Tomorrow</p>
+                    <a href="#highlights" class="btn">Discover More</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="edu2.jpg" class="d-block w-100" alt="School Image 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Join Our Community</h1>
+                    <p>Learn, Grow, and Thrive</p>
+                    <a href="#highlights" class="btn">Discover More</a>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Key Highlights Section (BS4 Grid) -->
+    <section id="highlights" class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4">Why Choose Elevate?</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Experienced Faculty</h3>
+                            <p class="card-text">Learn from industry experts dedicated to your success.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Innovative Courses</h3>
+                            <p class="card-text">Stay ahead with cutting-edge programs in technology and design.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title">Community-Oriented</h3>
+                            <p class="card-text">Join a supportive network that fosters growth and collaboration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-white py-4">
+        <div class="footer-content">
+            <div class="footer-section">
+                <p>Contact Us: info@elevateschool.org | +256 752 108 591</p>
+            </div>
+            <div class="footer-section">
+                <p>Follow Us: <a href="https://www.facebook.com/era92elevate/">Facebook</a> | <a href="https://ug.linkedin.com/company/era92-elevate">LinkedIn</a></p>
+            </div>
+            <div class="footer-section">
+                <p>© 2025 Elevate School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

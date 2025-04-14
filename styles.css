@@ -1,0 +1,345 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #1B2526; /* Dark Blue */
+    padding-top: 70px; /* Adjust for fixed navbar */
+}
+
+/* Navbar */
+.navbar {
+    background: #1B2526 !important; /* Dark Blue */
+}
+
+.navbar .nav-link, .navbar .dropdown-toggle {
+    color: #FFFFFF !important; /* White */
+    font-weight: 700;
+}
+
+.navbar .nav-link:hover, .navbar .dropdown-toggle:hover {
+    color: #14BF96 !important; /* Bright Blue */
+}
+
+.dropdown-menu {
+    background-color: #F6F7F6; /* Light Gray */
+}
+
+.dropdown-item {
+    color: #1B2526 !important; /* Dark Blue */
+}
+
+.dropdown-item:hover {
+    background-color: #14BF96; /* Primary Green */
+    color: #FFFFFF !important; /* White */
+}
+
+/* Logo Styling */
+#school-logo {
+    height: 90px; /* Increased from 60px */
+    width: 160px;
+}
+
+.navbar-brand {
+    padding: 10px; /* Adjusted for larger logo */
+}
+
+/* Hero Section */
+.carousel {
+    height: 100vh;
+}
+
+.carousel-item {
+    transition: opacity 0.5s ease; /* Smooth carousel transitions */
+}
+
+#heroCarousel .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.7;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#heroCarousel .carousel-item img:hover {
+    opacity: 1.0;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-caption {
+    z-index: 2;
+    background: rgba(27, 37, 38, 0.7); /* Dark Blue overlay */
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 48px;
+    margin-bottom: 155px;
+    color: #FFFFFF; /* White */
+    text-shadow: 1px 1px 2px rgba(27, 37, 38, 0.5);
+}
+
+.carousel-caption h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #FFFFFF; /* White */
+}
+
+.carousel-caption p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #FFFFFF; /* White */
+}
+
+.carousel-caption .btn {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #14BF96; /* Primary Green */
+    border-color: #14BF96;
+    color: #FFFFFF; /* White */
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.carousel-caption .btn:hover {
+    background-color: #005BB5; /* Darker Bright Blue */
+    border-color: #005BB5;
+    color: #FFC107; /* Yellow */
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2, h3, h4 {
+    color: #14BF96; /* Primary Green */
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #FFFFFF; /* White */
+    padding: 20px;
+}
+
+.card:hover {
+    animation: bounce 0.3s ease;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(-5px); }
+}
+
+.card-title, .card h3, .card h4 {
+    color: #1B2526; /* Dark Blue */
+}
+
+.card-text {
+    color: #1B2526; /* Dark Blue */
+}
+
+/* Team Photos */
+.team-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    display: block;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #F6F7F6; /* Fallback */
+}
+
+.team-photo[src=""]::before {
+    content: "👤";
+    font-size: 50px;
+    color: #1B2526;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.team-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.btn-primary, .btn {
+    background-color: #14BF96; /* Primary Green */
+    border-color: #14BF96;
+    color: #FFFFFF; /* White */
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.btn-primary:hover, .btn:hover {
+    background-color: #005BB5; /* Darker Bright Blue */
+    border-color: #005BB5;
+    color: #FFC107; /* Yellow */
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Values and Team Containers (Flexbox) */
+.values-container, .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Contact Container (Flexbox) */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Form */
+.form-control {
+    border-color: #14BF96; /* Primary Green */
+}
+
+.form-control:focus {
+    border-color: #005BB5; /* Darker Bright Blue */
+    box-shadow: 0 0 5px rgba(0, 91, 181, 0.5);
+}
+
+/* Footer (Flexbox) */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+footer {
+    background: #1B2526 !important; /* Dark Blue */
+}
+
+footer p {
+    font-weight: 400; /* Bold for readability */
+}
+
+footer a {
+    color: #007AEB !important; /* Dark Blue */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #14BF96 !important; /* Bright Blue */
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    background-color: #FFFFFF; /* White */
+}
+
+/* Override Bootstrap bg-light */
+.bg-light {
+    background-color: #F6F7F6 !important; /* Light Gray */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+    .carousel-caption h1 {
+        font-size: 36px;
+    }
+
+    .carousel-caption p {
+        font-size: 20px;
+    }
+
+    .carousel {
+        height: 80vh;
+    }
+
+    .carousel-item img {
+        height: 80vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 28px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+    }
+
+    .carousel {
+        height: 70vh;
+    }
+
+    .carousel-item img {
+        height: 70vh;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #school-logo {
+        height: 50px; /* Scale down for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h1 {
+        font-size: 24px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+
+    .carousel {
+        height: 60vh;
+    }
+
+    .carousel-item img {
+        height: 60vh;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
